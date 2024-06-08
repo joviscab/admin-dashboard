@@ -6,7 +6,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1.1fr 4fr;
     grid-template-areas: 
     "side-bar header"
     "side-bar main-content";
@@ -36,11 +36,12 @@ body {
     display: grid;
     font-size: 1.3rem;
     font-weight: 800;
-    border: solid black;
+    padding-top: 20px;
+    padding-left: 25px;
 }
 
 .menu-options {
-
+    padding-top: 50px;
 }
 
 svg {
@@ -53,7 +54,7 @@ svg {
 }
 
 .menu-icon {
-    padding-top: 7%;
+    padding-top: 6%;
 }
 
 .header {
