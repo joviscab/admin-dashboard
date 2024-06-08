@@ -1,0 +1,75 @@
+@import '/modern-normalize.css';
+
+body {
+    font-family: Roboto, Tahoma, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "side-bar header"
+    "side-bar main-content";
+}
+
+.side-bar {
+    grid-area: side-bar;
+    background-color: #0284c7;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 1.9rem;
+    gap: 12px;
+}
+
+.logo-img {
+    max-width: 3.2rem;
+    max-height: auto;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 60px);
+    font-size: 1.3rem;
+    font-weight: 800;
+    border: solid black;
+}
+
+.home-icon {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: end;
+}
+
+.home{
+    align-self: center;
+    justify-self: start;
+}
+
+svg {
+    height: 30px;
+}
+
+.menu-options {
+    grid-area: 8 / 1 / 9 / 1;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
