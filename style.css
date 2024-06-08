@@ -34,31 +34,26 @@ body {
 
 .menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, 60px);
     font-size: 1.3rem;
     font-weight: 800;
     border: solid black;
 }
 
-.home-icon {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    align-self: center;
-    justify-self: end;
-}
+.menu-options {
 
-.home{
-    align-self: center;
-    justify-self: start;
 }
 
 svg {
     height: 30px;
 }
 
-.menu-options {
-    grid-area: 8 / 1 / 9 / 1;
+.menu-title {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-icon {
+    padding-top: 7%;
 }
 
 .header {
