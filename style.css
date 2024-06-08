@@ -44,7 +44,7 @@ body {
     padding-top: 50px;
 }
 
-svg {
+.side-bar svg {
     height: 30px;
 }
 
@@ -59,7 +59,39 @@ svg {
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
+
+.search-bar {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.2fr;
+    gap: 15px;
+}
+
+.search-field {
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+    border: transparent;
+    width: 600px;
+    height: 30px;
+    grid-column: 2 / 3;
+}
+
+.search-icon {
+    width: 30px;
+    height: auto;
+    grid-column: 1 / 2;
+}
+
+
+
+
 
 .main-content {
     grid-area: main-content;
