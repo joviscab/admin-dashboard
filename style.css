@@ -19,16 +19,17 @@ body {
 }
 
 .logo {
-    display: flex;
-    align-items:center;
-    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    align-items: center;
     font-weight: 700;
     font-size: 1.9rem;
-    gap: 12px;
+    gap: 10px;
 }
 
 .logo-img {
     max-width: 3.2rem;
+    justify-self: end;
 }
 
 .menu {
