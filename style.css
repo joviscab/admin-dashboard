@@ -348,3 +348,21 @@ a {
     font-size: 14px;
     font-weight: 400;
 }
+
+.avatar-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avatar-title > p {
+    margin: 0;
+    font-size: 15px;
+    color: gray;
+}
+
+.avatar-title > h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
